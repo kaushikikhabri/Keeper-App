@@ -15,11 +15,13 @@ function App() {
     function addNote(event){
         event.preventDefault();     //to prevent refresh of entire page after clicking the button.
 
-        setNotesArray((prevArray) => {
-            console.log(prevArray);
-            
-            return [...prevArray, note]
-        })
+        if(note.title !== ""){
+            setNotesArray((prevArray) => {
+                console.log(prevArray);
+                
+                return [...prevArray, note]
+            })
+        }
 
         setNote({
             title: "",
