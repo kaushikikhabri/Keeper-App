@@ -78,7 +78,9 @@
     box-shadow: 0 1px 5px rgb(138, 137, 137);
   }
   form input,
-  form textarea {
+  form textarea,
+  .note input,
+  .note textarea {
     width: 100%;
     border: none;
     padding: 4px;
